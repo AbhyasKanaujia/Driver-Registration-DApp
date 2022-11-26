@@ -17,6 +17,7 @@ module.exports = {
       gas: 4000000, //4M is the max
     },
   },
+  contracts_build_directory: './client/src/contracts',
   compilers: {
     solc: {
       version: '0.8.0',

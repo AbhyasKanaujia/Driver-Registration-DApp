@@ -1,0 +1,1 @@
+const contractAddress = '0xCc425AB30eBfaE384CbfA552c1640fe94BB571F7'
