@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { contractAddress } from './constants'
 import DriverRegistration from './contracts/DriverRegistration.json'
+
+import { Header, Footer } from './components'
+import { Home, Register, View } from './screens'
 
 import './App.css'
 
@@ -25,10 +29,19 @@ function App() {
   if (!window.ethereum) return <h1>Please isntall Metamask first</h1>
 
   return (
-    <div>
-      <h1>Your Account: {account}</h1>
-      <button onClick={connect}>Connect</button>
-    </div>
+    <>
+      <Header />
+      <main>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/add" element={<Register />} />
+            <Route path="/view" element={<View />} />
+          </Routes>
+        </BrowserRouter>
+      </main>
+      <Footer />
+    </>
   )
 }
 
