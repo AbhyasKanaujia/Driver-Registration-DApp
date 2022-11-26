@@ -54,3 +54,7 @@ This is an extremely dangerous setting change. It might leave space for maliciou
 1. Open Power Shell as administrator.
 2. Enter command `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 3. Enter `Y` if prompted
+
+## Sources
+
+- Working with dates [https://soliditytips.com/articles/solidity-dates-time-operations/](https://soliditytips.com/articles/solidity-dates-time-operations/)

@@ -1,6 +1,5 @@
-const HelloWorld = artifacts.require('HelloWorld')
-const initMessage = 'Hello world!'
+const DriverRegistration = artifacts.require('DriverRegistration')
 
 module.exports = function (deployer) {
-  deployer.deploy(HelloWorld, initMessage)
+  deployer.deploy(DriverRegistration)
 }
