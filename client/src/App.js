@@ -6,42 +6,34 @@ import { contractAddress } from './constants'
 import DriverRegistration from './contracts/DriverRegistration.json'
 
 import { Header, Footer } from './components'
-import { Home, Register, View } from './screens'
+import { Home, Register, Status } from './screens'
 
 import './App.css'
+import { BlackBg } from './assets'
 
 function App() {
   const [account, setAccount] = useState('')
 
-  const connect = async () => {
-    if (window.ethereum) {
-      try {
-        const accounts = await window.ethereum.request({
-          method: 'eth_requestAccounts',
-        })
-        setAccount(accounts[0])
-      } catch (error) {
-        console.log(error)
-      }
-    }
-  }
-
   if (!window.ethereum) return <h1>Please isntall Metamask first</h1>
 
   return (
-    <>
-      <Header />
-      <main>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/add" element={<Register />} />
-            <Route path="/view" element={<View />} />
-          </Routes>
-        </BrowserRouter>
+    <BrowserRouter>
+      <Header account={account} setAccount={setAccount} />
+      <main
+        style={{
+          backgroundImage: `url(${BlackBg})`,
+          backgroundSize: 'cover',
+          minHeight: '90vh',
+        }}
+      >
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/status" element={<Status />} />
+        </Routes>
       </main>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 

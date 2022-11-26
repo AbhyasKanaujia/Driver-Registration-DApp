@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+:root {
+  --primary-purple-100: #d834ff;
+  --primary-blue-100: #0a84ff;
+  --primary-green-100: #4ee39d;
+  --primary-green-40: rgba(78, 227, 157, 0.4);
+  --primary-red-100: #ff496a;
+  --neutral-white-100: #fff;
+  --neutral-grey1-100: #ebebf5;
+  --neutral-grey2-100: #acacb5;
+  --neutral-grey3-100: #5f6377;
+  --neutral-grey4-100: #464957;
+  --neutral-grey5-100: #333345;
+  --neutral-grey5-50: rgba(51, 51, 69, 0.5);
+  --neutral-black-100: #000;
+  --background-blueblack: #07071c;
+  --gradient-brand-color1: #00fed0;
+  --gradient-brand-color2: #00b3ec;
+  --gradient-brand-color3: var(--gradient-purple-color1);
+  --gradient-brand-color4: var(--primary-purple-100);
+  --gradient-purple-color1: #9756ff;
+  --gradient-purple-color2: var(--primary-purple-100);
+  --gradient-red-color1: #fd0f82;
+  --gradient-red-color2: #ff5555;
+  --gradient-green-color1: #41afc7;
+  --gradient-green-color2: var(--primary-green-100);
+  --primary-font: 'Montserrat', sans-serif;
+}
+body {
+  background-color: var(--background-blueblack);
+  font-family: var(--primary-font);
+  color: var(--neutral-grey2-100);
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
