@@ -20,6 +20,7 @@ contract DriverRegistration is Ownable {
 
     struct Driver {
         string name;
+        string drivingLicense;
         string parentName;
         string permanentAddress;
         Gender gender;
@@ -30,6 +31,7 @@ contract DriverRegistration is Ownable {
 
     event driverRegistered(
         string _name,
+        string _drivingLicesnse,
         string _parentName,
         string _permanentAddress,
         Gender _gender,
@@ -40,6 +42,7 @@ contract DriverRegistration is Ownable {
 
     function register(
         string memory _name,
+        string memory _drivingLicense,
         string memory _parentName,
         string memory _permanentAddress,
         Gender _gender,
@@ -60,6 +63,7 @@ contract DriverRegistration is Ownable {
         drivers.push(
             Driver(
                 _name,
+                _drivingLicense,
                 _parentName,
                 _permanentAddress,
                 _gender,
@@ -71,6 +75,7 @@ contract DriverRegistration is Ownable {
 
         emit driverRegistered(
             _name,
+            _drivingLicense,
             _parentName,
             _permanentAddress,
             _gender,

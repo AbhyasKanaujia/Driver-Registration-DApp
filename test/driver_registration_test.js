@@ -11,6 +11,7 @@ contract('DriverRegistration', ([deployer, user]) => {
     const driverRegistration = await DriverRegistrationContract.deployed()
     await driverRegistration.register(
       'Alex Turner',
+      '123',
       'Max Turner',
       'Imaginary Highway',
       '0',
@@ -21,6 +22,11 @@ contract('DriverRegistration', ([deployer, user]) => {
     const newDriver = await driverRegistration.drivers(0)
 
     assert.equal(newDriver.name, 'Alex Turner', 'name not set properly')
+    assert.equal(
+      newDriver.drivingLicense,
+      '123',
+      'driving license not set properly'
+    )
     assert.equal(
       newDriver.parentName,
       'Max Turner',
