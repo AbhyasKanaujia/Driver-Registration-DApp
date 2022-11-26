@@ -1,4 +1,4 @@
-# Vehicle Registration Project
+# Driver Registration Project
 
 ## Getting Started
 
@@ -7,8 +7,8 @@
 1. Sign up for an account at [Alchemy](http://alchemy.com)
 2. Go to [the Alchemy dashboard](http://dashboard.alchemy.com)
 3. Click on "Create App"
-4. Enter the app name "Vehicle Registration"
-5. Enter the app description "Vehicle Registration DApp"
+4. Enter the app name "Driver Registration"
+5. Enter the app description "Driver Registration DApp"
 6. Choose chain "Ethereum"
 7. Choose Network "Goerli"
 
@@ -29,7 +29,7 @@
 2. Duplicate this file and rename it to .env
 3. Open .env
 4. Go to [the Alchemy dashboard](http://dashboard.alchemy.com)
-5. Click on "View Key" for the Vehicle Registration app
+5. Click on "View Key" for the Driver Registration app
 6. Copy the "HTTPS" link
 7. Replace `API_URL` in _.env_
 8. Follow this official tutorial by MetaMask on [How to reveal your Secret Recovery Phrase](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase)
