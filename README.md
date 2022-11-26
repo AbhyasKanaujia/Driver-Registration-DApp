@@ -55,6 +55,13 @@ This is an extremely dangerous setting change. It might leave space for maliciou
 2. Enter command `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 3. Enter `Y` if prompted
 
+### 5 Deploy contracts
+
+1. `truffle migrate --reset --network goerli`
+2. Copy the contract address
+3. Open _/client/src/constants.js_
+4. Replace the contract address
+
 ## Sources
 
 - Working with dates [https://soliditytips.com/articles/solidity-dates-time-operations/](https://soliditytips.com/articles/solidity-dates-time-operations/)
